@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text for contrast */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e1e1e; /* Darker navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #4CAF50; /* Highlight color */
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding-top: 120px; /* Adjust for fixed navbar */
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.home-section p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 2em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+}
+
+/* Profile Picture */
+.profile-pic-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 3px solid #4CAF50;
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* About Section */
+.about-section {
+    padding-top: 100px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Experience Section */
+.experience-section {
+    padding-top: 100px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    color: #4CAF50;
+}
+
+.experience-item .date {
+    font-style: italic;
+    color: #999;
+}
+
+.experience-item ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding-top: 100px;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    color: #4CAF50;
+}
+
+.project-item .tech {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Skills Section */
+.skills-section {
+    padding-top: 100px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding-top: 100px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #388E3C;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .home-section h1 {
+        font-size: 2.5em;
+    }
+}
