@@ -6,6 +6,14 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
+document.getElementById("view-projects").addEventListener("click", () => {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("get-in-touch").addEventListener("click", () => {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+});
+
 // Close menu on link click
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", () => {
