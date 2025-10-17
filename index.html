@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddharth Nayak — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <div class="logo">SIDDHARTH NAYAK</div>
+        <nav>
+          <button class="hamburger" aria-label="menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero::before"></div>
+        <div class="container hero-content">
+          <h1>SOFTWARE DEVELOPER</h1>
+          <p class="subtitle">Building Exceptional Digital Experiences</p>
+          <p>
+            I craft scalable web applications, cloud deployments, and
+            production-ready APIs. Specialized in full-stack development with
+            expertise in RAG/GenAI systems.
+          </p>
+          <div class="cta">
+            <button class="btn btn-primary" href="projects">
+              View My Work
+            </button>
+            <button class="btn btn-secondary">Get In Touch</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm Siddharth Nayak, a Computer Science Engineer with a passion
+                for building elegant, scalable solutions. With expertise in
+                full-stack development, cloud infrastructure, and AI
+                integration, I bridge the gap between complex problems and
+                user-friendly applications.
+              </p>
+              <p>
+                Currently pursuing my B.Tech at KIIT University with a strong
+                academic record (CGPA: 8.7), I've interned at leading companies
+                where I developed production-grade systems.
+              </p>
+            </div>
+            <div class="about-photo">
+              <img src="pp.jpg" alt="Siddharth Nayak" />
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Projects Deployed</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">8.7</div>
+                <div class="stat-label">CGPA KIIT</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Commitment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Software Developer Intern — OMEDD INDIA PVT LTD</h4>
+              <div class="timeline-date">May 2025 — July 2025</div>
+              <p>
+                Led end-to-end development of responsive web platforms with AWS
+                deployments, CI/CD pipelines, and automated backend services
+                including OTP systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Hospital Management System</h3>
+              <div class="project-tech">Spring Boot • Angular • MySQL</div>
+              <p class="project-desc">
+                Comprehensive system managing patient records, appointments, and
+                billing. Built 10+ REST APIs with AWS deployment and automated
+                CI/CD pipelines.
+              </p>
+              <a
+                href="https://github.com/bobthesiddharth/HMS"
+                class="project-link"
+                >View Project</a
+              >
+            </div>
+            <div class="project-card">
+              <h3>RAG Chatbot</h3>
+              <div class="project-tech">LangChain.js • Next.js • OpenAI</div>
+              <p class="project-desc">
+                Intelligent document Q&A system leveraging retrieval-augmented
+                generation for context-aware responses. Deployed on Vercel with
+                optimized performance.
+              </p>
+              <a
+                href="https://github.com/bobthesiddharth/RAG-CHATBOT"
+                class="project-link"
+                >View Project</a
+              >
+            </div>
+            <div class="project-card">
+              <h3>Movie Recommendation Engine</h3>
+              <div class="project-tech">Python • Streamlit • TMDb API</div>
+              <p class="project-desc">
+                Content-based recommender system using cosine similarity with
+                real-time data fetching and dynamic poster integration.
+              </p>
+              <a
+                href="https://github.com/bobthesiddharth/movie-recommendation-system/tree/main"
+                class="project-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Languages</h4>
+              <div class="skill-list">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">C/C++</div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <div class="skill-list">
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">Next.js</div>
+                <div class="skill-item">Tailwind CSS</div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <div class="skill-list">
+                <div class="skill-item">Spring Boot</div>
+                <div class="skill-item">REST APIs</div>
+                <div class="skill-item">Hibernate</div>
+                <div class="skill-item">Node.js</div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Tools & Cloud</h4>
+              <div class="skill-list">
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Git/GitHub</div>
+                <div class="skill-item">CI/CD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container contact-content">
+          <h2>Let's Connect</h2>
+          <p>
+            I'm always open to new opportunities, collaborations, and
+            interesting conversations. Feel free to reach out!
+          </p>
+          <div class="social-links">
+            <a
+              href="mailto:bobthesiddharth@gmail.com"
+              class="social-icon"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bobthesiddharth/"
+              target="_blank"
+              class="social-icon"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/bobthesiddharth"
+              target="_blank"
+              class="social-icon"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Siddharth Nayak. Crafted with love.</p>
+      </div>
+    </footer>
+
+    <script href="script.js"></script>
+  </body>
+</html>
